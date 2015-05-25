@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<TextView android:id="@+id/instructions" android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="NOTE: First time you use KBCPulse, it is necessary to stablish the conection with the nymi band.
+			Be sure of being authenticated with your nymi band. Then Click on Connect to nymi band" />
+
+	<Button android:id="@+id/provision" android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:text="@string/provision" />
+
+	<TextView android:id="@+id/validationText"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:visibility="invisible" 
+		android:text="Now you can authenticate yourself with the nymi to use the application"/>
+
+	<Button android:id="@+id/validation" android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:enabled="false"
+		android:text="@string/validation" android:visibility="invisible" />
+
+</LinearLayout>
